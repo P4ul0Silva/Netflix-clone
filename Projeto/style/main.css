@@ -1,0 +1,115 @@
+:root{
+    --vermelho: #e50914;
+    --preta:#141414;
+}
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+
+}
+
+/* Elementos Base */
+
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    border : 10px solid #141414;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font: size 40px;
+    margin-left: 5px;
+
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*Filme Principal */
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/Projeto/img/capaserie.jpg');
+    height: 600px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.filme-principal .sinopse{
+    width: 35vw;
+    margin-left: 30px;
+}
+
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    margin-right: 15px;
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 1s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.botoes{
+    position: absolute; bottom: 0;
+    
+}
+
+
+.filme-principal .titulo{
+    margin-left: 30px;
+    margin-top: 10%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    margin-left: 10px;
+}
+
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5%;
+}
+
+
